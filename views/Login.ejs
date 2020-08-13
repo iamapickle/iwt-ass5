@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="Login.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1 class="heading">Login</h1><br><br>
+            <p>
+                <% if (messages.error) { %>
+                    <li>
+                        <%= messages.error %>
+                    </li>
+                    <% } %>
+            </p>
+            <form class="form" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="Name"><b>Name</b></label><br>
+                <input type="text" name="name" class="input-Text" id="Login-name"><br><br>
+                <label for="Name"><b>Password:</b></label><br>
+                <input type="password" name="password" class="input-Text" id="Password"><br><br>
+                <input type="submit" class="button" value="Login">
+                <input type="reset" class="button">
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Login.js"></script>
+
+</body>
+
+</html>
